@@ -1,0 +1,16 @@
+<div class="container mt-3">
+    <h1 class="display-5 text-center">Ingrese la URL para acortar</h1>
+    <div class="row mt-5 mb-4">
+        <div class="col-lg-8">
+            <input type="text" class="form-control form-control-lg" placeholder="Ingrese URL" [(ngModel)]="nombreUrl">
+        </div>
+        <div class="col-lg-4">
+            <button type="button" class="btn btn-primary btn-block btn-lg" (click)="procesarURL()">Aceptar</button>
+        </div>
+    </div>
+    <div *ngIf="urlProcesada" class="row">
+        <div class="col-lg-8">
+            <input type="text" class="form-control form-control-lg " placeholder="URL Procesada" [(ngModel)]="urlShort">
+        </div>
+    </div>
+</div>
